@@ -190,6 +190,7 @@
         <p>
           A common belief is that hard problems are not useful for reinforcement learning (RL) because they provide no reward signals. 
           However, our findings show that <strong>hard problems can still be effective for RL training when partially solved steps are included</strong>—a curriculum-style approach that scaffolds learning.
+          Specifically, we explore two-stage curriculum-style RL training. In the first stage, the model is trained on the full dataset to build a strong foundation. In the second stage, we explore three data mixing strategies and find that <strong>continuing training on the hardest problems—augmented with partial solution steps—leads to the best performance</strong>. This method consistently outperforms training solely on hard problems without augmentation, or using a mix of easy and hard problems, especially for improving performance on the most challenging tasks.
         </p>
       </div>
 
