@@ -175,6 +175,59 @@
   <div class="columns is-centered">
       <div class="column is-8">
           <div class="section-title" style="margin-top: 4rem;">
+              <h2 class="title is-3">Curriculum-style RL Training</h2>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Main Results Section Header -->
+<div class="container has-text-centered">
+  <div class="columns is-centered">
+    <div class="column is-8">
+
+      <div class="has-text-left">
+        <p>
+          A common belief is that hard problems are not useful for reinforcement learning (RL) because they provide no reward signals. 
+          However, our findings show that <strong>hard problems can still be effective for RL training when partially solved steps are included</strong>—a curriculum-style approach that scaffolds learning.
+        </p>
+      </div>
+
+      <!-- Original vs Augmented Prompt Example -->
+      <div class="box has-text-left" style="background-color: #f9f9f9; margin-top: 2rem;">
+        <h4 class="title is-5" style="color: #363636;">🧠 Example: Original vs. Augmented Prompt</h4>
+
+        <div class="content">
+          <p><strong>🔵 Original prompt:</strong></p>
+          <blockquote style="border-left: 4px solid #ccc; padding-left: 1rem; margin-left: 0; font-size: 1.05rem;">
+            One of Euler's conjectures was disproved in the 1960s by three American mathematicians when they showed there was a positive integer such that:<br>
+            <span style="font-family: 'Courier New', Courier, monospace;">133⁵ + 110⁵ + 84⁵ + 27⁵ = n⁵</span><br>
+            Find the value of <em>n</em>.
+          </blockquote>
+
+          <p><strong>🎯 Original question augmented with partial solution:</strong></p>
+          <blockquote style="border-left: 4px solid #ccc; padding-left: 1rem; margin-left: 0; font-size: 1.05rem;">
+            One of Euler's conjectures was disproved in the 1960s by three American mathematicians when they showed there was a positive integer such that:<br>
+            <span style="font-family: 'Courier New', Courier, monospace;">133⁵ + 110⁵ + 84⁵ + 27⁵ = n⁵</span><br>
+            Find the value of <em>n</em>.<br><br>
+
+            <span style="color: #1f77b4;">
+              Taking the given equation modulo 2, 3, and 5, respectively, we have:<br>
+              <span style="font-family: 'Courier New', Courier, monospace;">n⁵ ≡ 0 (mod 2), n⁵ ≡ 0 (mod 3), n⁵ ≡ 4 (mod 5)</span>
+            </span>
+          </blockquote>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Main Results Section Header -->
+<div class="container has-text-centered">
+  <div class="columns is-centered">
+      <div class="column is-8">
+          <div class="section-title" style="margin-top: 4rem;">
               <h2 class="title is-3">Key Takeaways</h2>
           </div>
       </div>
@@ -183,7 +236,7 @@
 
 <!-- Insight Blocks -->
 <section class="section">
-  <div class="container">
+  <div class="container is-max-desktop">
 
     <!-- Insight 1: Hard Problems -->
     <div class="box">

@@ -196,3 +196,9 @@ Copy.section-title {
 .table td.has-text-left {
   text-align: left;
 }
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
